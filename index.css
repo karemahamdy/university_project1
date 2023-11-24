@@ -1,0 +1,111 @@
+/* start global style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  direction: rtl;
+  font-family: Rubik;
+}
+:root {
+  --main-background-color: #004274;
+  --secondary-background-color: #eee;
+  --main-text-color: rgb(27, 149, 219);
+  --main-padding-top: 5px;
+  --main-padding-bottom: 5px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-background-color);
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* end global style */
+
+/* start header section */
+header {
+  background-color: var(--secondary-background-color);
+  position: sticky;
+  z-index: 999999;
+  top: 0;
+  
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .logo img {
+  width: 100px;
+  height: 82px;
+}
+header .main-nav {
+  display: flex;
+}
+header .main-nav > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+header .main-nav > li > a:hover {
+  border-bottom: 2px solid;
+  color: rgb(27, 149, 219);
+}
+/* end header section */
+/* start home section */
+section {
+    background-color: #f0f4fb;
+    position: relative; 
+    height: calc(100vh - 99px);
+}
+.home .text {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left:50%;
+  color: var(--main-background-color);
+  font-size: 20px;
+ 
+  text-align: center;
+}
+.home h1 {
+  padding-bottom: 20px;
+}
+.home p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.home .button button { 
+  padding: 15px;
+  background-color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid;
+  border-color: var(--main-background-color);
+  color: var(--main-background-color);
+}
+.home button:hover {
+  color: white;
+  background-color: var(--main-background-color);
+}
+/* end home */
