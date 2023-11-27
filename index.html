@@ -17,6 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;800&family=Kaisei+Tokumin:wght@400;500&family=Open+Sans:ital,wght@0,300;1,300&family=Poppins&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@500&family=Work+Sans:ital,wght@0,300;0,500;0,700;1,200&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+            integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -52,6 +57,7 @@
     <!-- start home section -->
     <section class="home">
         <div class="container">
+            <div class="home-page">
             <div class="text">
                 <h1>مرحبا بك في الموقع الخاص بكلية العلوم</h1>
                 <p>
@@ -61,6 +67,8 @@
                     <button onclick="document.getElementById('log-in').style.display='block'">تسجيل الدخول</button>
                 </div>
             </div>
+            <img src="./images/home-image.gif" alt="home-imag">
+        </div>
         </div>
     </section>
     <!-- End home section  -->
@@ -87,7 +95,7 @@
                         </label>
                     </div>
                     <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01' ).style.display='none'"
+                        <button type="button" onclick="document.getElementById('log-in' ).style.display='none'"
                             class="cancelbtn"> Cancel </button>
                         <span class="password"> هل نسيت <a href="#">كلمة السر؟ </a></span>
                     </div>
@@ -97,11 +105,81 @@
         </div>
     </section>
     <!-- end log in section  -->
+    <!-- start service section -->
+    <div class="services">
+        <div class="container">
+            <div class="main-heading">
+                <h2> اختيارالجدول الخاص</h2>
+                </div>
+                <div class="services-container">
+                    <div class="srv-box">
+                        <i class="fas fa-desktop fa-3x"></i>
+                        <div class="text">
+                            <h3>اعضاء هيئة التدريس</h3>
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="srv-box">
+                        <i class="fas fa-cog fa-3x"></i>
+                        <div class="text">
+                            <h3>الترقيات</h3>
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="srv-box">
+                        <i class="fas fa-pencil-ruler fa-3x"></i>
+                        <div class="text">
+                            <h3>السفر</h3>
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="srv-box">
+                        <i class="fas fa-camera fa-3x"></i>
+                        <div class="text">
+                            <h3>الاجازات</h3>
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                            </p>
+                        </div>
+        </div>
+        <div class="srv-box">
+            <i class="fa-sharp fa-solid fa-pen-ruler"></i>
+            <div class="text">
+                <h3>الاقسام</h3>
+                <p>
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                </p>
+            </div>
+</div>
+<div class="srv-box">
+    <i class="fa-sharp fa-solid fa-pen-ruler"></i>
+    <div class="text">
+       <h3>ترقيات</h3>
+        <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+tincidunt nibh pulvinar a. Curabitur aliquet quam.
+        </p>
+    </div>
+</div>
+    </div>
+    </div>
+    </div>
+      <!-- end landing section -->
     <!-- start footer section -->
-    <!-- Start Footer -->
     <footer class="footer">
         <div class="container">
-            <p></p>
+            <p>AL-Azhar University</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
@@ -113,8 +191,9 @@
             </p>
         </div>
     </footer>
-
+    
     <!-- end footer section -->
+   
 </body>
 <script src="./index.js"></script>
 

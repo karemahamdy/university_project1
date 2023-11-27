@@ -13,9 +13,8 @@ body {
   font-family: Rubik;
 }
 :root {
-  --main-background-color: #004274;
-  --secondary-background-color: #eee;
-  --main-text-color: rgb(27, 149, 219);
+  --secondary-color: #27265f;
+  --main-color: #2bb573;
   --main-padding-top: 5px;
   --main-padding-bottom: 5px;
 }
@@ -27,12 +26,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-background-color);
+  color: var(--secondary-color);
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,7 +39,7 @@ a {
 
 /* start header section */
 header {
-  background-color: var(--secondary-background-color);
+  background-color: white;
   position: sticky;
   z-index: 999999;
   top: 0;
@@ -63,34 +62,38 @@ header .main-nav > li > a {
   justify-content: center;
   align-items: center;
   padding: 30px 10px;
+  font-family: Rubik;
 }
 header .main-nav > li > a:hover {
   border-bottom: 2px solid;
-  color: rgb(27, 149, 219);
+  color: var(--main-color);
 }
 /* end header section */
 /* start home section */
+
 section.home {
-  background-color: #f0f4fb;
-  position: relative;
- height: 100vh;
+  background-image: url("./images/background.png");
+  height: calc(100vh - 72px);
+  padding-top: 30px;
+}
+.home-page {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .home .text {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  color: var(--main-background-color);
   font-size: 20px;
-
   text-align: center;
 }
 .home h1 {
   padding-bottom: 20px;
+  color: var(--secondary-color);
 }
 .home p {
   font-size: 20px;
   padding-bottom: 20px;
+  color: var(--main-color);
 }
 .home .button button {
   padding: 12px;
@@ -100,112 +103,174 @@ section.home {
   font-weight: bold;
   font-size: 20px;
   border: 2px solid;
-  border-color: var(--main-background-color);
-  color: var(--main-background-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 .home button:hover {
   color: white;
-  background-color: var(--main-background-color);
+  background-color: var(--secondary-color);
+}
+.home img {
+  width: 50vw;
 }
 /* end home */
 /* start log-in  */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.log-in button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+button.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 12%;
+  border-radius: 50%;
+}
+span.password {
+  float: right;
+  padding-top: 16px;
+}
+.log-in {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
   }
- .log-in button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }  
-  button:hover {
-    opacity: 0.8;
+  to {
+    -webkit-transform: scale(1);
   }
-  button.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
   }
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
+  to {
+    transform: scale(1);
   }
-  
-  img.avatar {
-    width: 12%;
-    border-radius: 50%;
-  }
-  span.password{
-    float: right;
-    padding-top: 16px;
-  }    
-.log-in{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button (x) */
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: red;
-    cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-  }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-  }
+}
 /* end log-in  */
+/* start service section */
+.main-heading {
+  text-align: center;
+  color: var(--main-color);
+  position: relative;
+}
+.main-heading::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 2px;
+  left: 43%;
+  top: 135%;
+  background-color: var(--main-color);
+}
+
+.services {
+  padding: 35px;
+  background-color: #eee;
+}
+.services .services-container {
+  padding: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 60px;
+}
+.services .srv-box {
+  display: flex;
+ background-color: rgba(43, 181, 115, 0.2);
+}
+
+.services .srv-box i {
+  margin-right: 50px;
+}
+.services .srv-box i {
+  margin: 0 0 30px;
+}
+
+.services .srv-box h3 {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  color: var(--secondary-color);
+}
+
+.services .srv-box p {
+  line-height: 2;
+  color: var(--secondary-color);
+}
+/* end service section */
 /* start footer */
 footer {
-  background-color: black;
-  color:white;
+  background-color: var(--secondary-color);
+  color: white;
   text-align: center;
 }
 .footer p:not(.copyright) {
@@ -214,18 +279,21 @@ footer {
   border-bottom: 1px solid white;
   font-size: 22px;
   width: fit-content;
-  margin: 20px auto;
+  margin: auto;
 }
-
-.footer .social-icons i {
+.footer .social-icons {
   padding: 10px 15px;
+}
+.footer .social-icons i {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #2bb573;
 }
 
 .footer .copyright {
-  margin-top: 60px;
+  padding: 5px;
 }
 .footer .copyright span {
-  font-weight: bold;
-  color: var(--main-color);
+  font-weight: normal;
 }
 /* end footer */
