@@ -31,26 +31,9 @@
             <a href="#" class="logo">
                 <img src="./images/logo.jpg" alt="logo">
             </a>
-            <ul class="main-nav">
-                <li>
-                    <a href="#Stuff">أعضاء هيئة التدريس</a>
-                </li>
-                <li>
-                    <a href="#department">الأقسام</a>
-                </li>
-                <li>
-                    <a href="#Upgrade">ترقيات</a>
-                </li>
-                <li>
-                    <a href="#punishment">العقوبات</a>
-                </li>
-                <li>
-                    <a href="#travelling">السفر</a>
-                </li>
-                <li>
-                    <a href="#permission">الاجازات</a>
-                </li>
-            </ul>
+            <a href="#" class="logo">
+                <img src="./images/logo2.jpg" alt="logo">
+            </a>
         </div>
     </header>
     <!-- end header -->
@@ -65,6 +48,7 @@
                 </p>
                 <div class="button">
                     <button onclick="document.getElementById('log-in').style.display='block'">تسجيل الدخول</button>
+                    <button onclick="document.getElementById('sign-up').style.display='block'">انشاء حساب</button>
                 </div>
             </div>
             <img src="./images/home-image.gif" alt="home-imag">
@@ -72,8 +56,9 @@
         </div>
     </section>
     <!-- End home section  -->
+    
     <!-- start log in section -->
-    <section class="log-in" id="log-in">
+    <section class="modal" id="log-in">
         <div class="container">
             <form class="modal-content animate" action="/action_page.php" method="post">
                 <div class="imgcontainer">
@@ -91,10 +76,11 @@
 
                         <button type="submit">تسجيل الدخول</button>
                         <label>
-                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                            <input type="checkbox" checked="checked" name="remember"> تذكرني
                         </label>
                     </div>
-                    <div class="container" style="background-color:#f1f1f1">
+
+                    <div class="container1">
                         <button type="button" onclick="document.getElementById('log-in' ).style.display='none'"
                             class="cancelbtn"> Cancel </button>
                         <span class="password"> هل نسيت <a href="#">كلمة السر؟ </a></span>
@@ -105,94 +91,44 @@
         </div>
     </section>
     <!-- end log in section  -->
+    <!-- start sign up section -->
+    
+<section id="sign-up" class="modal">
+    <div class="container">
+    <span onclick="document.getElementById('sign-up').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content  animate" action="/action_page.php">
+      <div class="container">
+        <h1>انشاء حساب</h1>
+      
+        <label for="email"><b>البريد الكتروني </b></label>
+        <input type="text" placeholder="ادخل البريد الالكتروني" name="email" required>
+  
+        <label for="psw"><b>كلمة السر</b></label>
+        <input type="password" placeholder="ادخل كلمة السر" name="psw" required>
+  
+        <label for="psw-repeat"><b>اعادة كلمة السر</b></label>
+        <input type="password" placeholder="اعادة كلمة السر" name="psw-repeat" required>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> تذكرني
+        </label>
+  
+        <div class="clearfix">
+             <button type="button" onclick="document.getElementById('sign-up').style.display='none'" class="cancelbtn">الغاء</button>
+          <button type="submit" class="signupbtn">تسجيل </button>
+         
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</section>
+    <!-- end sign up section -->
+
     <!-- start service section -->
     <div class="services">
-        <div class="container">
-            <div class="main-heading">
-                <h2> اختيارالجدول الخاص</h2>
-                </div>
-                <div class="services-container">
-                    <div class="srv-box">
-                        <i class="fas fa-desktop fa-3x"></i>
-                        <div class="text">
-                            <h3>اعضاء هيئة التدريس</h3>
-                            <p>
-                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-            tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="srv-box">
-                        <i class="fas fa-cog fa-3x"></i>
-                        <div class="text">
-                            <h3>الترقيات</h3>
-                            <p>
-                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-            tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="srv-box">
-                        <i class="fas fa-pencil-ruler fa-3x"></i>
-                        <div class="text">
-                            <h3>السفر</h3>
-                            <p>
-                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-            tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="srv-box">
-                        <i class="fas fa-camera fa-3x"></i>
-                        <div class="text">
-                            <h3>الاجازات</h3>
-                            <p>
-                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-            tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                            </p>
-                        </div>
+        
         </div>
-        <div class="srv-box">
-            <i class="fa-sharp fa-solid fa-pen-ruler"></i>
-            <div class="text">
-                <h3>الاقسام</h3>
-                <p>
-                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                </p>
-            </div>
-</div>
-<div class="srv-box">
-    <i class="fa-sharp fa-solid fa-pen-ruler"></i>
-    <div class="text">
-       <h3>ترقيات</h3>
-        <p>
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-tincidunt nibh pulvinar a. Curabitur aliquet quam.
-        </p>
-    </div>
-</div>
-    </div>
-    </div>
-    </div>
-      <!-- end landing section -->
-    <!-- start footer section -->
-    <footer class="footer">
-        <div class="container">
-            <p>AL-Azhar University</p>
-            <div class="social-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-whatsapp"></i>
-                <i class="fab fa-linkedin"></i>
-            </div>
-            <p class="copyright">&copy; 2023
-                <span>stuff of</span> science
-            </p>
-        </div>
-    </footer>
-    
-    <!-- end footer section -->
    
 </body>
 <script src="./index.js"></script>
