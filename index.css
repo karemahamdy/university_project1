@@ -14,7 +14,11 @@ body {
 }
 :root {
   --secondary-color: #27265f;
-  --main-color: #2bb573;
+  --main-color: #fa65b1;
+  /* #fa65b1
+  #7169e2
+  #a07fce
+  #2bb573 */
   --main-padding-top: 5px;
   --main-padding-bottom: 5px;
 }
@@ -61,8 +65,8 @@ header .logo img {
 
 section.home {
   background-image: url("./images/background.png");
-  height: calc(100vh - 72px);
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .home-page {
   padding-top: 80px;
@@ -99,7 +103,8 @@ section.home {
   background-color: var(--secondary-color);
 }
 .home img {
-  width: 50vw;
+  padding-top: 25px;
+  width: 35vw;
 }
 /* end home */
 
@@ -115,7 +120,7 @@ input[type="password"] {
 }
 
 .modal button {
-  background-color: var(--main-color);
+  background-color: #2bb573;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -186,7 +191,7 @@ span.password {
 
 /* start sign-up */
 button.signupbtn {
-  background-color: var(--main-color);
+  background-color: #2bb573;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -237,6 +242,64 @@ button.cancelbtn {
 }
 /* end animate */
 
-/* start service section */
+/* start stuff section */
+.stuff{
+  background:url("./images/quote-bg.jpg");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.stuff .page{
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+}
+.page button{
+  background-color: var(--secondary-color); 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+/* end stuff section */
 
-/* end service section */
+.service{
+  background: url("./images/background.png");
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.service h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  color: black;
+ 
+}
+.box-container{
+  display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 25px;
+      justify-content: center; 
+      align-items: center; 
+}
+.service button {
+  background-color: var(--secondary-color); 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}

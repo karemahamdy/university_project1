@@ -17,11 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;800&family=Kaisei+Tokumin:wght@400;500&family=Open+Sans:ital,wght@0,300;1,300&family=Poppins&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@500&family=Work+Sans:ital,wght@0,300;0,500;0,700;1,200&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
-            integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+        integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -41,22 +41,22 @@
     <section class="home">
         <div class="container">
             <div class="home-page">
-            <div class="text">
-                <h1>مرحبا بك في الموقع الخاص بكلية العلوم</h1>
-                <p>
-                    هنا تجد المعلومات اللازمة والخاصة بأعضاء هيئة التدريس لجميع الأقسام
-                </p>
-                <div class="button">
-                    <button onclick="document.getElementById('log-in').style.display='block'">تسجيل الدخول</button>
-                    <button onclick="document.getElementById('sign-up').style.display='block'">انشاء حساب</button>
+                <div class="text">
+                    <h1>مرحبا بك في الموقع الخاص بكلية العلوم</h1>
+                    <p>
+                        هنا تجد المعلومات اللازمة والخاصة بأعضاء هيئة التدريس لجميع الأقسام
+                    </p>
+                    <div class="button">
+                        <button onclick="document.getElementById('log-in').style.display='block'">تسجيل الدخول</button>
+                        <button onclick="document.getElementById('sign-up').style.display='block'">انشاء حساب</button>
+                    </div>
                 </div>
+                <img src="./images/about-dec.png" alt="home-imag">
             </div>
-            <img src="./images/home-image.gif" alt="home-imag">
-        </div>
         </div>
     </section>
     <!-- End home section  -->
-    
+
     <!-- start log in section -->
     <section class="modal" id="log-in">
         <div class="container">
@@ -92,44 +92,71 @@
     </section>
     <!-- end log in section  -->
     <!-- start sign up section -->
-    
-<section id="sign-up" class="modal">
-    <div class="container">
-    <span onclick="document.getElementById('sign-up').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <form class="modal-content  animate" action="/action_page.php">
-      <div class="container">
-        <h1>انشاء حساب</h1>
-      
-        <label for="email"><b>البريد الكتروني </b></label>
-        <input type="text" placeholder="ادخل البريد الالكتروني" name="email" required>
-  
-        <label for="psw"><b>كلمة السر</b></label>
-        <input type="password" placeholder="ادخل كلمة السر" name="psw" required>
-  
-        <label for="psw-repeat"><b>اعادة كلمة السر</b></label>
-        <input type="password" placeholder="اعادة كلمة السر" name="psw-repeat" required>
-        
-        <label>
-          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> تذكرني
-        </label>
-  
-        <div class="clearfix">
-             <button type="button" onclick="document.getElementById('sign-up').style.display='none'" class="cancelbtn">الغاء</button>
-          <button type="submit" class="signupbtn">تسجيل </button>
-         
+
+    <section id="sign-up" class="modal">
+        <div class="container">
+            <span onclick="document.getElementById('sign-up').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content  animate" action="/action_page.php">
+                <div class="container">
+                    <h1>انشاء حساب</h1>
+
+                    <label for="email"><b>البريد الكتروني </b></label>
+                    <input type="text" placeholder="ادخل البريد الالكتروني" name="email" required>
+
+                    <label for="psw"><b>كلمة السر</b></label>
+                    <input type="password" placeholder="ادخل كلمة السر" name="psw" required>
+
+                    <label for="psw-repeat"><b>اعادة كلمة السر</b></label>
+                    <input type="password" placeholder="اعادة كلمة السر" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> تذكرني
+                    </label>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('sign-up').style.display='none'"
+                            class="cancelbtn">الغاء</button>
+                        <button type="submit" class="signupbtn">تسجيل </button>
+
+                    </div>
+                </div>
+            </form>
         </div>
-      </div>
-    </form>
-  </div>
-</div>
-</section>
+        </div>
+    </section>
     <!-- end sign up section -->
 
-    <!-- start service section -->
-    <div class="services">
-        
+    <!-- start stuff section -->
+    <div class="stuff">
+        <div class="container">
+            <div class="page">
+                <button>اعضاء هيئة التدريس</button>
+            </div>
         </div>
-   
+    </div>
+    <!-- end stuff section -->
+
+    <!-- start table name and id forms to insert stuff -->
+
+    <!-- end table name and id forms to insert stuff -->
+
+    <!-- start service section -->
+    <div class="service">
+        <div class="container">
+            <h1>Variable name</h1>
+            <div class="box-container">
+                <button>بيانات </button>
+                <button> الترقيات</button>
+                <button>الاجازات</button>
+                <button>العقوبات</button>
+                <button>الاعارات</button>
+                <button>السفر</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- end service section -->
 </body>
 <script src="./index.js"></script>
 
