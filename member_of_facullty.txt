@@ -1,0 +1,63 @@
+
+create DATABASE member_of_facullty ;
+ 
+create TABLE meM_department( DE_ID INT(100) ,
+ NAME VARCHAR(15),
+ PRIMARY KEY(DE_ID)
+   );
+
+ CREATE TABLE travelling(
+    start_data date NOT null,
+    end_data date NOT null,
+    type varchar(15)NOT null,
+   TCouncil_decision int(100) NOT null,
+   Tuniveristy_Decision int(100) NOT null,
+    PRIMARY KEY(Tuniveristy_Decision )
+    );
+CREATE TABLE permission 
+
+(
+    Type VARCHAR (15) NOT NULL ,
+    Cause VARCHAR (15) NOT NULL ,
+    Start_date DATE NOT NULL ,
+    End_date DATE NOT NULL ,
+    Puviversity_decision int(100) NOT null,
+    PExcutive_Decision int(100) NOT null,
+    PRIMARY KEY (Puviversity_decision ) 
+
+ );
+CREATE TABLE STUFF (fname varchar(15) NOT NULL,
+ midname VARCHAR(15) NOT NULL, lNAME VARCHAR(15) NOT NULL, 
+sex CHAR(8) NOT NULL, ID INT(8) NOT NULL PRIMARY KEY, salary INT(15),
+ SSN char(8) NOT NULL , S_D DATE, G_D DATE, phone int, address VARCHAR(15), degree VARCHAR(15) );
+
+
+create TABLE punishment( 
+    num int(100),
+counl_des INT(100) ,
+start_data date NOT null,
+    end_data date NOT null,
+    type varchar(15)NOT null,
+    PRIMARY KEY(num )
+    );
+
+create table degree(start_date date not null,end_date date not null, 
+Duviversity_decision int(100),
+DExcutive_Decision int(100) ,
+PRIMARY KEY(Duviversity_decision)
+ );
+________________________________________
+alter table stuff add CONSTRAINT FK_DNO foreign key(ID)
+references mem_department(DE_ID);
+
+alter table degree add CONSTRAINT FK_id foreign key(Duviversity_decision)
+references stuff(ID);
+
+alter table stuff add CONSTRAINT FK_tr foreign key(ID)
+references travelling(Tuniveristy_Decision);
+
+alter table stuff add CONSTRAINT FK_per foreign key(ID)
+references permission(Puviversity_decision);
+
+alter table stuff add CONSTRAINT FK_pun foreign key(ID)
+references punishment(num);
