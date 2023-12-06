@@ -270,6 +270,7 @@ left: 50%;
 }
 /* end stuff section */
 
+/* start service section */
 .service{
   background: url("./images/background.png");
   padding-top: 35px;
@@ -303,3 +304,51 @@ left: 50%;
   cursor: pointer;
   border-radius: 12px;
 }
+/* end service section */
+
+/* start tables name */
+.table{
+  padding-top: 25px;
+}
+#stufff {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#stuff td, #stuff th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#stuff tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#stuff tr:hover {
+  background-color: #ddd;
+}
+
+#stuff th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.table button{
+  background-color: var(--secondary-color); 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  bottom: 0;
+}
+/* end tables name */
