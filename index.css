@@ -109,8 +109,8 @@ section.home {
 /* end home */
 
 /* start log-in  */
-input[type="text"],
-input[type="password"] {
+.modal input[type="text"],
+.modal input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -307,48 +307,68 @@ left: 50%;
 /* end service section */
 
 /* start tables name */
-.table{
+.table-name{
   padding-top: 25px;
 }
-#stufff {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+#mother
+{
+    width: 100% ;
+    font-size: 20px ;
+ 
+}
+.table-name main
+{
+    float: left;
+    border:  1px solid gray;
+    padding: 5px;
+}
+.table-name input
+{
+    padding: 4px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Cairo', sans-serif;
+}
+.table-name #div
+{
+    text-align: center;
+    width: 300px;
+    float: right;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    background-color: silver;
+    color: white;
+
+}
+.table-name #tbl
+{
+    width: 890px;
+    font-size: 20px;
+}
+.table-name #tbl th
+{
+    background-color: silver;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+.table-name aside button 
+{
+    width: 190px;
+    padding: 8px;
+    margin-top: 7px;
+    font-size: 17px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+
+}
+#form{
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#stuff td, #stuff th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#stuff tr:nth-child(even){
-  background-color: #f2f2f2;
-}
-
-#stuff tr:hover {
-  background-color: #ddd;
-}
-
-#stuff th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: var(--main-color);
-  color: white;
-}
-
-.table button{
-  background-color: var(--secondary-color); 
-  border: none;
-  color: white;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
-  bottom: 0;
-}
 /* end tables name */

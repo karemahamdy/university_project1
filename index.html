@@ -137,9 +137,14 @@
         </div>
     </div>
     <!-- end stuff section -->
-
+ 
     <!-- start table name and id forms to insert stuff -->
-    
+
+
+
+   
+        
+       
     <!-- end table name and id forms to insert stuff -->
 
     <!-- start service section -->
@@ -157,39 +162,116 @@
         </div>
     </div>
     <!-- end service section -->
-
-    <div class="table">
+     <div class="form" id="form">
         <div class="container">
-            <table id="stuff">
-                <tr>
-                  <th>الاسم الاول</th>
-                  <th>الاسم التاني</th>
-                  <th>الاسم التالت</th>
-                  <th>الكود</th>
-                  <th>المرتب</th>
-                  <th>العنوان</th>
-                  <th> النوع</th>
-                  <th>الرقم</th>
-                  <th>الدرجة</th>
-                  <th>تاريخ البداية</th>
-                </tr>
-                <tr>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                    <td><label name="stuff"></label></td>
-                  </tr>
-            </table>
-            <button>delete</button>
-            <button>update</button>
+        <table class="s1" style=" border-collapse: collapse; ">
+          
+            <tr id="head">
+                
+                <th style="font-size: larger; font-weight: bold; direction: rtl;">البيانات</th>
+                <th></th>
+            </tr>
+            
+            <td>
+                <label></label>
+                <input type="text" name="name" id="name">
+            </td>
+
+            <td style="font-size: larger; font-weight: bold; direction: rtl;"> الاسم</td>
+            <tr>
+                <td>
+                    <label></label>
+                    <input type="text" name="id" id="id">
+                </td>
+                <td style="font-size: larger; font-weight: bold; direction: rtl; "> السن</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label></label>
+                    <input type="text" name="id" id="id">
+                </td>
+                <td style="font-size: larger; font-weight: bold; direction: rtl; "> الرقم القومي</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label></label>
+                    <input type="text" name="id" id="id">
+                </td>
+                <td style="font-size: larger; font-weight: bold; direction: rtl; ">رقم الموبايل</td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label></label>
+                    <input type="text" name="name" id="name">
+                </td>
+                <td style="font-size: larger; font-weight: bold; direction: rtl; ">العنوان</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label></label>
+                    <input type="text" name="name" id="name">
+                </td>
+                <td style="font-size: larger; font-weight: bold; direction: rtl; ">الدرجه العلميه</td>
+
+            </tr>
+        </table>
+        <br>
+        <div class="center">
+            <button style="width: 120px; font-size: larger;" name="delet">حذف</button>
+            <button style="width: 120px; font-size: larger;" name="update">تعديل</button>
+
+
+            <select style="width: 120px; font-size: larger;">
+                <option style="width: 100px;">الترقيات</option>
+                <option style="width: 100px;">الاجازات</option>
+                <option style="width: 100px;">العقوبات</option>
+                <option style="width: 100px;">السفر</option>
+            </select>
         </div>
     </div>
+    </div>
+  <!-- end -->
+  <div class="table-name">
+    <div  id="mother">
+        <div class="container">
+        <form method="post">
+<main>
+    <table id="tbl">
+        <tr>
+            <th> اسم الدكتور</th>
+            <th> الكود</th>
+        </tr>
+
+    </table>
+</main>
+ </form>  
+    <aside>
+              <div id="div"> 
+                  <img src="https://img.freepik.com/free-vector/set-female-male-school-teacher-various-elements-postures-gestures-clothes-isolated-white-background-cartoon-flat-illustration-with-isolated-items-school-stuff_1150-55359.jpg?w=740&t=st=1701735970~exp=1701736570~hmac=f1bd9f05982421c6a73d908467abf82b26836b6d3868458fe1649e392a762145" alt="لوجو الموقع" width="200px">
+                  <h3> بيانات عضو هيئه التدريس</h3>
+                  <label>الكود:</label><br>
+                  <input type="text" name="id" id="id"><br>
+                  <label>الاسم:</label><br>
+                  <input type="text" name="name"  id="name"><br>
+                  <label>الرقم القومي :</label><br>
+                  <input type="text" name="id" id="id"><br>
+                  <label>رقم الموبايل:</label><br>
+                  <input type="text" name="id" id="id"><br>
+                  <label> العنوان:</label><br>
+                  <input type="text" name="name" id="name"><br>
+                  <label> الدرجه العلميه :</label>
+                  <input type="text" name="name" id="name"><br><br>
+                  <button name="add"> اضافه عضو </button>
+              </div>
+          </aside> 
+        </div>
+</div>
+</div>
 </body>
 <script src="./index.js"></script>
 
