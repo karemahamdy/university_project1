@@ -232,16 +232,18 @@ button.cancelbtn {
 
 /* start service section */
 .service {
-  background: url("./images/background.png");
+  background: url("./images/Rectangle\ 55.png");
   background-size: cover ;
   padding-top: 35px;
   padding-bottom: 35px;
+  height: 90vh;
 }
 .box-container {
   display: grid;
  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
   padding-right: 100px;
+  padding-top: 100px;
 }
 .box{
 background-color: #91d8b6;
@@ -296,61 +298,3 @@ box-shadow: 0 0 3px ;
     border-radius: 50px;
   }
   /* end service section */
-
-/* start tables name */
-.table-name {
-  padding-top: 25px;
-}
-#mother {
-  width: 100%;
-  font-size: 20px;
-}
-.table-name main {
-  float: left;
-  border: 1px solid gray;
-  padding: 5px;
-}
-.table-name input {
-  padding: 4px;
-  border: 2px solid black;
-  text-align: center;
-  font-size: 17px;
-  font-family: "Cairo", sans-serif;
-}
-.table-name #div {
-  text-align: center;
-  width: 300px;
-  float: right;
-  border: 1px solid black;
-  padding: 10px;
-  font-size: 20px;
-  background-color: silver;
-  color: white;
-}
-.table-name #tbl {
-  width: 890px;
-  font-size: 20px;
-}
-.table-name #tbl th {
-  background-color: silver;
-  color: black;
-  font-size: 20px;
-  padding: 10px;
-}
-.table-name aside button {
-  width: 190px;
-  padding: 8px;
-  margin-top: 7px;
-  font-size: 17px;
-  font-family: "Cairo", sans-serif;
-  font-weight: bold;
-}
-#form {
-  padding-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* end tables name */
-/* buttons
- */
