@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -27,18 +26,38 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: white;
 }
-
 .container {
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* end animate */
 /* end global style */
 
 /* start header section */
@@ -59,10 +78,9 @@ header .logo img {
   width: 80px;
   height: 80px;
 }
-
 /* end header section */
-/* start home section */
 
+/* start home section */
 section.home {
   background-image: url("./images/background.png");
   padding-top: 30px;
@@ -118,7 +136,6 @@ section.home {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
 .modal button {
   background-color: #2bb573;
   color: white;
@@ -141,7 +158,6 @@ button.cancelbtn {
   margin: 24px 0 12px 0;
   position: relative;
 }
-
 img.avatar {
   width: 12%;
   border-radius: 50%;
@@ -158,7 +174,6 @@ span.password {
   border: 1px solid #888;
   width: 80%;
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -171,7 +186,6 @@ span.password {
   background-color: #474e5d;
   padding-top: 50px;
 }
-
 /* The Close Button (x) */
 .close {
   position: absolute;
@@ -181,7 +195,6 @@ span.password {
   font-size: 35px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: red;
@@ -217,89 +230,35 @@ button.cancelbtn {
 }
 /* end sign-up */
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s;
-}
-
-@-webkit-keyframes animatezoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes animatezoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-/* end animate */
-
-/* start stuff section */
-.stuff{
-  background:url("./images/quote-bg.jpg");
-  background-size: cover;
-  position: relative;
-  height: 100vh;
-}
-.stuff .page{
-position: absolute;
-transform: translate(-50%, -50%);
-top: 50%;
-left: 50%;
-}
-.page button{
-  background-color: var(--secondary-color); 
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
-}
-/* end stuff section */
-
 /* start service section */
-.service{
+.service {
   background: url("./images/background.png");
   padding-top: 35px;
   padding-bottom: 35px;
 }
-.service h1{
+.service h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
-  color: black;
- 
+  color:var(--secondary-color);
 }
-.box-container{
+.box-container {
   display: grid;
-      grid-template-columns: repeat(3, 1fr); 
-      gap: 25px;
-      justify-content: center; 
-      align-items: center; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
 }
 .service button {
-  background-color: var(--secondary-color); 
+  background-color: var(--secondary-color);
   border: none;
   color: white;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 45px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
@@ -307,68 +266,57 @@ left: 50%;
 /* end service section */
 
 /* start tables name */
-.table-name{
+.table-name {
   padding-top: 25px;
 }
-#mother
-{
-    width: 100% ;
-    font-size: 20px ;
- 
+#mother {
+  width: 100%;
+  font-size: 20px;
 }
-.table-name main
-{
-    float: left;
-    border:  1px solid gray;
-    padding: 5px;
+.table-name main {
+  float: left;
+  border: 1px solid gray;
+  padding: 5px;
 }
-.table-name input
-{
-    padding: 4px;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 17px;
-    font-family: 'Cairo', sans-serif;
+.table-name input {
+  padding: 4px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Cairo", sans-serif;
 }
-.table-name #div
-{
-    text-align: center;
-    width: 300px;
-    float: right;
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 20px;
-    background-color: silver;
-    color: white;
-
+.table-name #div {
+  text-align: center;
+  width: 300px;
+  float: right;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 20px;
+  background-color: silver;
+  color: white;
 }
-.table-name #tbl
-{
-    width: 890px;
-    font-size: 20px;
+.table-name #tbl {
+  width: 890px;
+  font-size: 20px;
 }
-.table-name #tbl th
-{
-    background-color: silver;
-    color: black;
-    font-size: 20px;
-    padding: 10px;
+.table-name #tbl th {
+  background-color: silver;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
 }
-.table-name aside button 
-{
-    width: 190px;
-    padding: 8px;
-    margin-top: 7px;
-    font-size: 17px;
-    font-family: 'Cairo', sans-serif;
-    font-weight: bold;
-
+.table-name aside button {
+  width: 190px;
+  padding: 8px;
+  margin-top: 7px;
+  font-size: 17px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
 }
-#form{
+#form {
   padding-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 /* end tables name */
