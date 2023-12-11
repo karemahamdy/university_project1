@@ -298,3 +298,17 @@ box-shadow: 0 0 3px ;
     border-radius: 50px;
   }
   /* end service section */
+  .back {
+    position: fixed;
+    bottom: 10px;
+    background-color: #f75842;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: Arial, Tahoma;
+    cursor: pointer;
+    transition: 0.2s;
+    left: 10px;
+  }
