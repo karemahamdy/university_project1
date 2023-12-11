@@ -13,7 +13,7 @@ body {
 }
 :root {
   --secondary-color: #27265f;
-  --main-color: #fa65b1;
+  --main-color: #2bb573;
   /* #fa65b1
   #7169e2
   #a07fce
@@ -122,7 +122,7 @@ section.home {
 }
 .home img {
   padding-top: 25px;
-  width: 35vw;
+  width: 50vw;
 }
 /* end home */
 
@@ -233,37 +233,69 @@ button.cancelbtn {
 /* start service section */
 .service {
   background: url("./images/background.png");
+  background-size: cover ;
   padding-top: 35px;
   padding-bottom: 35px;
 }
-.service h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 25px;
-  color:var(--secondary-color);
-}
 .box-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  justify-content: center;
-  align-items: center;
+ grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding-right: 100px;
+}
+.box{
+background-color: #91d8b6;
+border-radius: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 250px;
+height: 150px;  
+box-shadow: 0 0 3px ;
+}
+ .icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:white;
+    font-size: 20px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}  
+.icon.special6 i{
+  background-color: rgb(235, 61, 61);
+}
+.icon.special4 i {
+  background: red;
+}
+.icon.special3 i,
+.icon.special5 i {
+  background: rgb(28, 158, 218);
+}
+.icon.special2 i,
+.icon.special1 i{
+  background: rgb(101, 15, 122);
 }
 .service button {
-  background-color: var(--secondary-color);
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 45px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
-}
-/* end service section */
+    background-color: var(--secondary-color); 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin: 4px 1px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+  /* end service section */
 
 /* start tables name */
 .table-name {
@@ -320,3 +352,5 @@ button.cancelbtn {
   align-items: center;
 }
 /* end tables name */
+/* buttons
+ */

@@ -10,3 +10,10 @@
     #     </div>
     # </div> -->
     # <!-- end stuff section -->
+# /* .service h1 {
+#   display: flex;
+#   justify-content: center;
+#   align-items: center;
+#   padding-bottom: 25px;
+#   color:var(--secondary-color);
+# } */
