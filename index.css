@@ -63,9 +63,9 @@ a {
 /* start header section */
 header {
   background-color: white;
-  position: sticky;
+  /* position: sticky;
   z-index: 999999;
-  top: 0;
+  top: 0; */
 }
 header .container {
   padding-top: 10px;

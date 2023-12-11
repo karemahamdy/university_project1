@@ -17,3 +17,101 @@
 #   padding-bottom: 25px;
 #   color:var(--secondary-color);
 # } */
+
+
+<body dir="rtl">
+    <div  id="mother">
+      <form method="post">
+        <!--لوحه التحكم-->
+        <aside>
+            <div id="div"> 
+                <img src="https://img.freepik.com/free-vector/set-female-male-school-teacher-various-elements-postures-gestures-clothes-isolated-white-background-cartoon-flat-illustration-with-isolated-items-school-stuff_1150-55359.jpg?w=740&t=st=1701735970~exp=1701736570~hmac=f1bd9f05982421c6a73d908467abf82b26836b6d3868458fe1649e392a762145" alt="لوجو الموقع" width="200px">
+                <h3> بيانات عضو هيئه التدريس</h3>
+                <label>الكود:</label><br>
+                <input type="text" name="id" id="id"><br>
+                <label>الاسم:</label><br>
+                <input type="text" name="name"  id="name"><br>
+                <label>الرقم القومي :</label><br>
+                <input type="text" name="id" id="id"><br>
+                <label>رقم الموبايل:</label><br>
+                <input type="text" name="id" id="id"><br>
+                <label> العنوان:</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label> الدرجه العلميه :</label>
+                <input type="text" name="name" id="name"><br><br>
+                <button name="add"> اضافه عضو </button>
+            </div>
+        </aside>
+        <!-- عرض بيانات اعضاء هيئه التدريس-->
+        <main>
+            <table id="tbl">
+                <tr>
+                    <th> اسم الدكتور</th>
+                    <th> الكود</th>
+                </tr>
+
+            </table>
+        </main>
+         </form>  
+    </div>
+
+    <style>  
+    body
+    {
+        background-color: whitesmoke;
+        font-family: 'Cairo', sans-serif;
+    }
+    #mother
+    {
+        width: 100% ;
+        font-size: 20px ;
+    }
+    main
+    {
+        float: left;
+        border:  1px solid gray;
+        padding: 5px;
+    }
+    input
+    {
+        padding: 4px;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Cairo', sans-serif;
+    }
+    aside
+    {
+        text-align: center;
+        width: 300px;
+        float: right;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 20px;
+        background-color: silver;
+        color: white;
+
+    }
+    #tbl
+    {
+        width: 890px;
+        font-size: 20px;
+    }
+    #tbl th
+    {
+        background-color: silver;
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+    }
+    aside button 
+    {
+        width: 190px;
+        padding: 8px;
+        margin-top: 7px;
+        font-size: 17px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: bold;
+
+    }
+    </style>

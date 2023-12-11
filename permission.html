@@ -32,3 +32,47 @@
         </div>
     </header>
     <!-- end header -->
+    <!-- start table -->
+    <div class="table">
+        <div class="img-header">
+            <img src="./images/Rectangle 55.png">
+        </div>
+   
+    <table id="customers">
+        <tr>
+          <th>الاسم الاول</th>
+          <th>الاسم التاني</th>
+          <th>الاسم التالت</th>
+          
+          <th>تعديل</th>
+          <th>حذف</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+    
+      </table>
+      <div class="insert-button">
+        <button onclick='document.getElementById("myForm").style.display = "block"'>اضافة</button>
+      </div>
+      <!-- The form -->
+<div class="form-popup animate" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>اضافة</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn">تسجيل</button>
+      <button type="button" class="btn cancel" onclick='document.getElementById("myForm").style.display = "none"'>Close</button>
+    </form>
+  </div>
+</div>
+<!-- end table -->
+</body>
+</html>
