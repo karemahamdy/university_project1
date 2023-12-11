@@ -9,6 +9,7 @@
     <title>University Instructor</title>
     <!-- css & html files -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="datastuff.css">
     <link rel="stylesheet" href="all.css">
     <!-- css icons and fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,47 +33,60 @@
         </div>
     </header>
     <!-- end header -->
-    <!-- start table -->
+    <!--  الاجازات -->
     <div class="table">
         <div class="img-header">
             <img src="./images/Rectangle 55.png">
         </div>
-   
-    <table id="customers">
-        <tr>
-          <th>الاسم الاول</th>
-          <th>الاسم التاني</th>
-          <th>الاسم التالت</th>
-          
-          <th>تعديل</th>
-          <th>حذف</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-    
-      </table>
-      <div class="insert-button">
-        <button onclick='document.getElementById("myForm").style.display = "block"'>اضافة</button>
-      </div>
-      <!-- The form -->
-<div class="form-popup animate" id="myForm">
-    <form action="/action_page.php" class="form-container">
-      <h1>اضافة</h1>
-  
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-  
-      <button type="submit" class="btn">تسجيل</button>
-      <button type="button" class="btn cancel" onclick='document.getElementById("myForm").style.display = "none"'>Close</button>
-    </form>
-  </div>
-</div>
-<!-- end table -->
+
+        <table id="customers">
+            <tr>
+                <th>نوع الاجازة</th>
+                <th> تاريخ البداية</th>
+                <th>تاريخ النهاية</th>
+                <th>سبب الاجازة </th>
+                <th>تعديل</th>
+                <th>حذف</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+        </table>
+        <div class="insert-button">
+            <button onclick='document.getElementById("myForm").style.display = "block"'>اضافة</button>
+        </div>
+        <!-- The form -->
+        <div class="form-popup animate" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>اضافة</h1>
+
+                <label for="type"><b>نوع الاجازة</b></label>
+                <input type="text" name="type" required>
+
+                <label for="start-date"><b>تاريخ البداية</b></label>
+                <input type="text" name="start-date" required>
+
+                <label for="end-date"><b>تاريخ النهاية</b></label>
+                <input type="text"  name="end-date">
+
+                <label for="cause"><b>سبب الاجازة</b></label>
+                <input type="text" name="cause">
+
+
+                <button type="submit" class="btn">اضافة</button>
+                <button type="button" class="btn cancel"
+                    onclick='document.getElementById("myForm").style.display = "none"'>اغلاق</button>
+            </form>
+        </div>
+    </div>
+    <!-- end table -->
 </body>
+
 </html>

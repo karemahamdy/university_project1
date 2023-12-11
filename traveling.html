@@ -9,6 +9,7 @@
     <title>University Instructor</title>
     <!-- css & html files -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="datastuff.css">
     <link rel="stylesheet" href="all.css">
     <!-- css icons and fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,5 +33,60 @@
         </div>
     </header>
     <!-- end header -->
+    <!--  السفر -->
+    <div class="table">
+        <div class="img-header">
+            <img src="./images/Rectangle 55.png">
+        </div>
+
+        <table id="customers">
+            <tr>
+                <th>نوع السفر</th>
+                <th> المدة</th>
+                <th>قرار الجامعة</th>
+                <th>قرارالمجلس </th>
+                <th>تعديل</th>
+                <th>حذف</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+        </table>
+        <div class="insert-button">
+            <button onclick='document.getElementById("myForm").style.display = "block"'>اضافة</button>
+        </div>
+        <!-- The form -->
+        <div class="form-popup animate" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>اضافة</h1>
+
+                <label for="type"><b>نوع السفر</b></label>
+                <input type="text" name="type" required>
+
+                <label for="period"><b>المدة</b></label>
+                <input type="text" name="period" required>
+
+                <label for="council-desicion"><b>قرار المجلس</b></label>
+                <input type="text"  name="council-desicion" required>
+
+                <label for="University-descion"><b>قرار الجامعة</b></label>
+                <input type="text" name="University-descion" required>
+
+
+                <button type="submit" class="btn">اضافة</button>
+                <button type="button" class="btn cancel"
+                    onclick='document.getElementById("myForm").style.display = "none"'>اغلاق</button>
+            </form>
+        </div>
+    </div>
+    <!-- end table -->
 </body>
+
 </html>
