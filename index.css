@@ -127,8 +127,8 @@ section.home {
 /* end home */
 
 /* start log-in  */
-.modal span.password a{
-  color: red;
+.modal span a.red{
+  color: red !important;
 }
 .modal input[type="text"],
 .modal input[type="password"] {
