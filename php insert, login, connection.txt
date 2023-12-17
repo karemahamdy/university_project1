@@ -1,0 +1,45 @@
+<?php
+$servername = "your_servername";
+$username = "your_username";
+$password = "your_password";
+$dbname = "memberof_faculty";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Insert data into meM_department table
+$sql = "INSERT INTO meM_department (DE_ID, NAME) VALUES (1, 'Department Name')";
+$conn->query($sql);
+
+// Insert data into travelling table
+$sql = "INSERT INTO travelling (start_data, end_data, type, TCouncil_decision, Tuniveristy_Decision) VALUES ('2023-01-01', '2023-01-10', 'Type', 'Council Decision', 'University Decision')";
+$conn->query($sql);
+
+// Insert data into permission table
+$sql = "INSERT INTO permission (Type, Cause, Start_date, End_date, Puviversity_decision, PExcutive_Decision) VALUES ('Permission Type', 'Cause', '2023-02-01', '2023-02-15', 1, 2)";
+$conn->query($sql);
+
+// Insert data into STUFF table
+$sql = "INSERT INTO STUFF (fname, midname, lNAME, sex, dep_ID, salary, SSN, S_D, G_D, phone, address, degree) VALUES ('First Name', 'Middle Name', 'Last Name', 'Male', 1, 50000, '12345678', '2022-01-01', '2023-01-01', 1234567890, 'Address', 'Degree')";
+$conn->query($sql);
+
+// Insert data into punishment table
+$sql = "INSERT INTO punishment (num, counl_des, start_data, end_data, type) VALUES (1, 1, '2023-03-01', '2023-03-10', 'Punishment Type')";
+$conn->query($sql);
+
+// Insert data into degree table
+$sql = "INSERT INTO degree (start_date, end_date, Duviversity_decision, DExcutive_Decision) VALUES ('2023-04-01', '2023-04-10', 1, 2)";
+$conn->query($sql);
+
+// Insert data into userr table
+$sql = "INSERT INTO userr (user_NAME, passward) VALUES ('Username', 'Password')";
+$conn->query($sql);
+
+// Close connection
+$conn->close();
+?>
